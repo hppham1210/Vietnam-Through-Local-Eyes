@@ -26,6 +26,7 @@ body {
   border: 2px solid var(--primary);
 }
 
+/* Header */
 header {
   display: flex;
   min-height: 120px;
@@ -56,6 +57,7 @@ header {
   background-repeat: no-repeat;
 }
 
+/* Navigation */
 nav {
   border-bottom: 2px solid var(--secondary);
 }
@@ -84,6 +86,7 @@ nav a.active {
   color: var(--accent);
 }
 
+/* Hero */
 .hero {
   height: 340px;
   background-image: url("RiceCrop.jpg");
@@ -93,6 +96,7 @@ nav a.active {
   border-bottom: 2px solid var(--secondary);
 }
 
+/* Content */
 .content {
   padding: 32px 28px;
 }
@@ -104,31 +108,21 @@ nav a.active {
   margin-bottom: 22px;
 }
 
+.content h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-top: 28px;
+  margin-bottom: 14px;
+}
+
 .content p {
   font-size: 1.05rem;
   line-height: 1.8;
   margin-bottom: 16px;
 }
 
-.info-columns {
-  display: flex;
-  gap: 28px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
-
-.info-columns section {
-  flex: 1;
-  min-width: 220px;
-}
-
-.info-columns h3 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.7rem;
-  margin-bottom: 10px;
-  color: var(--text);
-}
-
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
@@ -136,6 +130,7 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Responsive */
 @media (max-width: 900px) {
   header {
     flex-direction: column;
@@ -169,7 +164,15 @@ footer {
     height: 220px;
   }
 
-  .info-columns {
-    flex-direction: column;
+  .content {
+    padding: 24px 18px;
+  }
+
+  .content h2 {
+    font-size: 2rem;
+  }
+
+  .content h3 {
+    font-size: 1.5rem;
   }
 }
