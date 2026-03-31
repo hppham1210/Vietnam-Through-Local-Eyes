@@ -1,0 +1,175 @@
+:root {
+  --text: #111827;
+  --background: #f6f3ea;
+  --primary: #2f6f4e;
+  --secondary: #e4d4b9;
+  --accent: #e38c3b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: var(--background);
+  border: 2px solid var(--primary);
+}
+
+header {
+  display: flex;
+  min-height: 120px;
+}
+
+.banner-text {
+  width: 70%;
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.banner-text h1 {
+  color: var(--background);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.banner-image {
+  width: 30%;
+  background-image: url("Ho-Chi-Minh-City.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav {
+  border-bottom: 2px solid var(--secondary);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  padding: 16px 18px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+nav a.active {
+  color: var(--accent);
+}
+
+.hero {
+  height: 340px;
+  background-image: url("RiceCrop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: 2px solid var(--secondary);
+}
+
+.content {
+  padding: 32px 28px;
+}
+
+.content h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.3rem;
+  color: var(--primary);
+  margin-bottom: 22px;
+}
+
+.content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.info-columns {
+  display: flex;
+  gap: 28px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.info-columns section {
+  flex: 1;
+  min-width: 220px;
+}
+
+.info-columns h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid var(--secondary);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+  }
+
+  .banner-text,
+  .banner-image {
+    width: 100%;
+  }
+
+  .banner-image {
+    height: 140px;
+  }
+
+  .banner-text h1 {
+    font-size: 2.3rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .hero {
+    height: 220px;
+  }
+
+  .info-columns {
+    flex-direction: column;
+  }
+}
