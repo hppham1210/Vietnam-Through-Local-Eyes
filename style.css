@@ -31,10 +31,15 @@ body {
 
 /* HEADER */
 header {
-  width: 30%; background-image: url("Ho-Chi-Minh-City.jpg"); 
-  background-size: cover; 
-  background-position: center; 
+  height: 180px;
+  background-image: url("Project%20Image/Ho-Chi-Minh-City.jpg");
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 /* TITLE BOX */
