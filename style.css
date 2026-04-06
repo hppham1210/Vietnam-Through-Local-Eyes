@@ -29,33 +29,30 @@ body {
   background-color: var(--background);
 }
 
-/* HEADER */
-header {
-  height: 180px;
-  background-image: url("Project%20Image/Ho-Chi-Minh-City.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
+/* HEADER */ 
+header { display: flex; 
+        min-height: 120px; }
 
-/* TITLE BOX */
+/* LEFT TITLE */ 
 .banner-text {
-  background-color: rgba(47, 111, 78, 0.82);
-  padding: 18px 32px;
-  border-radius: 8px;
-}
+width: 70%; 
+background-color: var(--primary);
+display: flex; 
+align-items: center; 
+justify-content: center; 
+padding: 20px; }
 
-.banner-text h1 {
-  color: var(--background);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 3rem;
-  text-align: center;
-}
-
+.banner-text h1 { 
+  color: var(--background); 
+  font-family: Georgia, "Times New Roman", 
+    serif; font-size: 3rem;
+  text-align: center; }
+/* RIGHT IMAGE (FIXED GAP) */ 
+.banner-image { width: 30%; 
+               background-image: url("Ho-Chi-Minh-City.jpg"); 
+               background-size: cover; background-position: center;
+                 background-repeat: no-repeat; }                                                                                                                                                                                                                                                                                                                                                                                       
+                                                                                                                                                                                                                                                                                                                                                                                                   
 /* NAV */
 nav {
   border-bottom: 2px solid var(--secondary);
@@ -89,7 +86,7 @@ nav a.active {
 /* HERO IMAGE */
 .hero {
   height: 350px;
-  background-image: url("Project%20Image/RiceCrop.jpg");
+ background-image: url("RiceCrop.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
