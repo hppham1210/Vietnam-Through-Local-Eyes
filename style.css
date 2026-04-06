@@ -48,10 +48,12 @@ padding: 20px; }
     serif; font-size: 3rem;
   text-align: center; }
 /* RIGHT IMAGE (FIXED GAP) */ 
-.banner-image { width: 30%; 
-               background-image: url("Ho-Chi-Minh-City.jpg"); 
-               background-size: cover; background-position: center;
-                 background-repeat: no-repeat; }                                                                                                                                                                                                                                                                                                                                                                                       
+.banner-image { 
+  width: 30%; 
+  background-image: url("Ho-Chi-Minh-City.jpg"); 
+  background-size: cover;
+  background-position: center;
+background-repeat: no-repeat; }                                                                                                                                                                                                                                                                                                                                                                                       
                                                                                                                                                                                                                                                                                                                                                                                                    
 /* NAV */
 nav {
