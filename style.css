@@ -29,33 +29,39 @@ body {
   background-color: var(--background);
 }
 
-/* HEADER */ 
-header { display: flex; 
-        min-height: 120px; }
+/* HEADER */
+header {
+  display: flex;
+  min-height: 120px;
+}
 
-/* LEFT TITLE */ 
+/* LEFT TITLE */
 .banner-text {
-width: 70%; 
-background-color: var(--primary);
-display: flex; 
-align-items: center; 
-justify-content: center; 
-padding: 20px; }
+  width: 70%;
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
 
-.banner-text h1 { 
-  color: var(--background); 
-  font-family: Georgia, "Times New Roman", 
-    serif; font-size: 3rem;
-  text-align: center; }
-/* RIGHT IMAGE (FIXED GAP) */ 
-.banner-image { 
-  width: 30%; 
-  background-image: url("Nightlife.jpg"); 
+.banner-text h1 {
+  color: var(--background);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* RIGHT IMAGE */
+.banner-image {
+  width: 30%;
+  min-height: 120px;
+  background-image: url("Nightlife.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}                                                                                                                                                                                                                                                                                                                                                                                     
-                                                                                                                                                                                                                                                                                                                                                                                                   
+}
+
 /* NAV */
 nav {
   border-bottom: 2px solid var(--secondary);
@@ -89,7 +95,7 @@ nav a.active {
 /* HERO IMAGE */
 .hero {
   height: 350px;
- background-image: url("RiceCrop.jpg");
+  background-image: url("RiceCrop.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -139,15 +145,20 @@ footer {
 /* RESPONSIVE */
 @media (max-width: 900px) {
   header {
-    height: 140px;
+    flex-direction: column;
   }
 
-  .banner-text {
-    padding: 14px 20px;
+  .banner-text,
+  .banner-image {
+    width: 100%;
+  }
+
+  .banner-image {
+    height: 150px;
   }
 
   .banner-text h1 {
-    font-size: 2.1rem;
+    font-size: 2.2rem;
   }
 
   nav ul {
