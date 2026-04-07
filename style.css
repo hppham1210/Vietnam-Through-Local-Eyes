@@ -62,7 +62,6 @@ header {
   background-repeat: no-repeat;
 }
 
-
 /* NAV */
 nav {
   border-bottom: 2px solid var(--secondary);
@@ -102,7 +101,6 @@ nav a.active {
   background-repeat: no-repeat;
   border-bottom: 2px solid var(--secondary);
 }
-
 
 /* CONTENT */
 .content {
