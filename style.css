@@ -103,6 +103,7 @@ nav a.active {
   border-bottom: 2px solid var(--secondary);
 }
 
+
 /* CONTENT */
 .content {
   max-width: 900px;
