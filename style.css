@@ -62,6 +62,11 @@ header {
   background-repeat: no-repeat;
 }
 
+/* NORTH PAGE HEADER IMAGE */
+.north-banner {
+  background-image: url("Image/hanoi3.jpg");
+}
+
 /* NAV */
 nav {
   border-bottom: 2px solid var(--secondary);
@@ -102,6 +107,11 @@ nav a.active {
   border-bottom: 2px solid var(--secondary);
 }
 
+/* NORTH PAGE HERO */
+.north-hero {
+  background-image: url("Image/North2.jpg");
+}
+
 /* CONTENT */
 .content {
   max-width: 900px;
@@ -134,23 +144,7 @@ nav a.active {
   font-size: 1.05rem;
 }
 
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  border-top: 2px solid var(--secondary);
-  font-size: 0.9rem;
-}
-
-/* NORTH PAGE IMAGES */
-.north-banner {
-  background-image: url("hanoi3.jpg");
-}
-
-.north-hero {
-  background-image: url("North2.jpg");
-}
-
+/* IMAGE GRID */
 .image-grid-two {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -158,6 +152,7 @@ footer {
   margin: 20px 0 30px;
 }
 
+/* IMAGE BOX */
 .img-box {
   height: 220px;
   background-size: cover;
@@ -166,45 +161,55 @@ footer {
   border: 2px solid var(--secondary);
 }
 
+/* LARGE IMAGE */
 .large-img {
   height: 350px;
   margin-bottom: 20px;
 }
 
+/* INDIVIDUAL IMAGES */
 .hanoi1 {
-  background-image: url("hanoi1.jpg");
+  background-image: url("Image/hanoi1.jpg");
 }
 
 .hanoi2 {
-  background-image: url("hanoi2.jpeg");
+  background-image: url("Image/hanoi2.jpeg"); /* IMPORTANT */
 }
 
 .hanoi3 {
-  background-image: url("hanoi3.jpg");
+  background-image: url("Image/hanoi3.jpg");
 }
 
 .cityview {
-  background-image: url("vietnam4.jpg");
+  background-image: url("Image/Ho-Chi-Minh-City.jpg");
 }
 
 .north1 {
-  background-image: url("North1.jpg");
+  background-image: url("Image/North1.jpg");
 }
 
 .north2 {
-  background-image: url("North2.jpg");
+  background-image: url("Image/North2.jpg");
 }
 
 .food-main {
-  background-image: url("hanoifood.jpg");
+  background-image: url("Image/hanoifood.jpg");
 }
 
 .food2 {
-  background-image: url("hanoifood2.jpg");
+  background-image: url("Image/hanoifood2.jpg");
 }
 
 .food3 {
-  background-image: url("hanoifood3.jpg");
+  background-image: url("Image/hanoifood3.jpg");
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid var(--secondary);
+  font-size: 0.9rem;
 }
 
 /* RESPONSIVE */
