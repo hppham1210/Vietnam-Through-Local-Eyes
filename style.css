@@ -1,3 +1,147 @@
+:root {
+  --text: #111827;
+  --background: #f6f3ea;
+  --primary: #2f6f4e;
+  --secondary: #e4d4b9;
+  --accent: #e38c3b;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* WRAPPER */
+#wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  border: 2px solid var(--primary);
+  background-color: var(--background);
+}
+
+/* HEADER */
+header {
+  display: flex;
+  min-height: 120px;
+}
+
+/* LEFT TITLE */
+.banner-text {
+  width: 70%;
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.banner-text h1 {
+  color: var(--background);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* RIGHT IMAGE */
+.banner-image {
+  width: 30%;
+  min-height: 120px;
+  background-image: url("Image/Nightlife.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* NAV */
+nav {
+  border-bottom: 2px solid var(--secondary);
+  background-color: var(--background);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  padding: 16px 18px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+nav a.active {
+  color: var(--accent);
+}
+
+/* HERO IMAGE */
+.hero {
+  height: 350px;
+  background-image: url("Image/RiceCrop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: 2px solid var(--secondary);
+}
+
+/* CONTENT */
+.content {
+  max-width: 900px;
+  margin: auto;
+  padding: 32px 20px;
+}
+
+/* HEADINGS */
+.content h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.4rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.content h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-top: 30px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* TEXT */
+.content p {
+  line-height: 1.8;
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid var(--secondary);
+  font-size: 0.9rem;
+}
+
 /* NORTH PAGE IMAGES */
 
 /* HEADER + HERO */
@@ -22,6 +166,7 @@
   height: 220px;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   border: 2px solid var(--secondary);
 }
 
@@ -32,21 +177,93 @@
 }
 
 /* INDIVIDUAL IMAGES */
-.hanoi1 { background-image: url("hanoi1.jpg"); }
-.hanoi2 { background-image: url("hanoi2.jpeg"); }
-.hanoi3 { background-image: url("hanoi3.jpg"); }
-.cityview { background-image: url("vietnam4.jpg"); }
+.hanoi1 {
+  background-image: url("hanoi1.jpg");
+}
 
-.north1 { background-image: url("North1.jpg"); }
-.north2 { background-image: url("North2.jpg"); }
+.hanoi2 {
+  background-image: url("hanoi2.jpeg");
+}
 
-.food-main { background-image: url("hanoifood.jpg"); }
-.food2 { background-image: url("hanoifood2.jpg"); }
-.food3 { background-image: url("hanoifood3.jpg"); }
+.hanoi3 {
+  background-image: url("hanoi3.jpg");
+}
+
+.cityview {
+  background-image: url("vietnam4.jpg");
+}
+
+.north1 {
+  background-image: url("North1.jpg");
+}
+
+.north2 {
+  background-image: url("North2.jpg");
+}
+
+.food-main {
+  background-image: url("hanoifood.jpg");
+}
+
+.food2 {
+  background-image: url("hanoifood2.jpg");
+}
+
+.food3 {
+  background-image: url("hanoifood3.jpg");
+}
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
+  header {
+    flex-direction: column;
+  }
+
+  .banner-text,
+  .banner-image {
+    width: 100%;
+  }
+
+  .banner-image {
+    height: 150px;
+  }
+
+  .banner-text h1 {
+    font-size: 2.2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .hero {
+    height: 220px;
+  }
+
+  .content h2 {
+    font-size: 2rem;
+  }
+
+  .content h3 {
+    font-size: 1.5rem;
+  }
+
   .image-grid-two {
     grid-template-columns: 1fr;
+  }
+
+  .img-box {
+    height: 200px;
+  }
+
+  .large-img {
+    height: 250px;
   }
 }
