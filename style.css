@@ -143,8 +143,6 @@ footer {
 }
 
 /* NORTH PAGE IMAGES */
-
-/* HEADER + HERO */
 .north-banner {
   background-image: url("hanoi3.jpg");
 }
@@ -153,7 +151,6 @@ footer {
   background-image: url("North2.jpg");
 }
 
-/* IMAGE GRID */
 .image-grid-two {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -161,7 +158,6 @@ footer {
   margin: 20px 0 30px;
 }
 
-/* IMAGE BOX */
 .img-box {
   height: 220px;
   background-size: cover;
@@ -170,13 +166,11 @@ footer {
   border: 2px solid var(--secondary);
 }
 
-/* LARGE IMAGE */
 .large-img {
   height: 350px;
   margin-bottom: 20px;
 }
 
-/* INDIVIDUAL IMAGES */
 .hanoi1 {
   background-image: url("hanoi1.jpg");
 }
