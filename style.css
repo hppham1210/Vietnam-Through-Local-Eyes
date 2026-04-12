@@ -62,6 +62,11 @@ header {
   background-repeat: no-repeat;
 }
 
+/* NORTH PAGE HEADER IMAGE */
+.north-banner {
+  background-image: url("hanoi3.jpg");
+}
+
 /* NAV */
 nav {
   border-bottom: 2px solid var(--secondary);
@@ -102,6 +107,11 @@ nav a.active {
   border-bottom: 2px solid var(--secondary);
 }
 
+/* NORTH PAGE HERO */
+.north-hero {
+  background-image: url("North2.jpg");
+}
+
 /* CONTENT */
 .content {
   max-width: 900px;
@@ -132,6 +142,28 @@ nav a.active {
   line-height: 1.8;
   margin-bottom: 15px;
   font-size: 1.05rem;
+}
+
+/* NORTH PAGE IMAGES */
+.image-grid-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin: 20px 0 30px;
+}
+
+.feature-image {
+  width: 100%;
+  display: block;
+  border: 2px solid var(--secondary);
+}
+
+.caption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #374151;
+  margin-top: 8px;
+  margin-bottom: 20px;
 }
 
 /* FOOTER */
@@ -182,5 +214,9 @@ footer {
 
   .content h3 {
     font-size: 1.5rem;
+  }
+
+  .image-grid-two {
+    grid-template-columns: 1fr;
   }
 }
