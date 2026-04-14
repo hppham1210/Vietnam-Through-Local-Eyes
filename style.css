@@ -1,9 +1,11 @@
 :root {
-  --text: #111827;
-  --background: #f6f3ea;
+  --text: #1f2937;
+  --background: #f7f3eb;
   --primary: #2f6f4e;
-  --secondary: #e4d4b9;
-  --accent: #e38c3b;
+  --secondary: #e8d8bd;
+  --accent: #d97b2d;
+  --white: #ffffff;
+  --shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
 /* RESET */
@@ -18,251 +20,330 @@ body {
   background-color: var(--background);
   color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
 }
 
 /* WRAPPER */
 #wrapper {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 20px auto;
+  background-color: var(--white);
   border: 2px solid var(--primary);
-  background-color: var(--background);
+  box-shadow: var(--shadow);
 }
 
 /* HEADER */
 header {
-  display: flex;
-  min-height: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  min-height: 280px;
 }
 
-/* LEFT TITLE */
 .banner-text {
-  width: 70%;
-  background-color: var(--primary);
+  background: linear-gradient(135deg, var(--primary), #214d37);
+  color: var(--white);
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  padding: 20px;
+  padding: 40px;
 }
 
 .banner-text h1 {
-  color: var(--background);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 3rem;
-  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 12px;
 }
 
-/* RIGHT IMAGE */
+.banner-text p {
+  font-size: 1.05rem;
+  max-width: 500px;
+}
+
 .banner-image {
-  width: 30%;
-  min-height: 120px;
-  background-image: url("Image/Nightlife.jpg");
+  min-height: 280px;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 
-/* NORTH PAGE HEADER IMAGE */
 .north-banner {
-  background-image: url("Image/hanoi3.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)), url("North1.jpg");
 }
 
 /* NAV */
 nav {
-  border-bottom: 2px solid var(--secondary);
-  background-color: var(--background);
+  background-color: var(--secondary);
+  border-top: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-nav a {
+nav ul li a {
   display: block;
+  padding: 15px 22px;
   text-decoration: none;
-  padding: 16px 18px;
-  font-size: 1.1rem;
+  color: var(--text);
   font-weight: bold;
-  color: var(--primary);
+  transition: 0.3s ease;
 }
 
-nav a:hover {
-  color: var(--accent);
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: var(--primary);
+  color: var(--white);
 }
 
-nav a.active {
-  color: var(--accent);
-}
-
-/* HERO IMAGE */
+/* HERO */
 .hero {
-  height: 350px;
-  background-image: url("Image/RiceCrop.jpg");
+  min-height: 450px;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  border-bottom: 2px solid var(--secondary);
+  position: relative;
 }
 
-/* NORTH PAGE HERO */
 .north-hero {
-  background-image: url("Image/North2.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.28), rgba(0,0,0,0.42)), url("north4.jpg");
+}
+
+.hero-overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 28px;
+  max-width: 560px;
+  border-left: 6px solid var(--accent);
+  box-shadow: var(--shadow);
+}
+
+.hero-overlay h2 {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.hero-overlay p {
+  font-size: 1rem;
 }
 
 /* CONTENT */
 .content {
-  max-width: 900px;
-  margin: auto;
-  padding: 32px 20px;
+  padding: 42px;
 }
 
-/* HEADINGS */
 .content h2 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 2.4rem;
+  text-align: center;
   color: var(--primary);
-  margin-bottom: 20px;
-  letter-spacing: 1px;
+  font-size: 2rem;
+  margin-bottom: 22px;
 }
 
 .content h3 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: var(--primary);
-  margin-top: 30px;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
+  margin-top: 36px;
+  margin-bottom: 16px;
+  border-left: 6px solid var(--accent);
+  padding-left: 12px;
 }
 
-/* TEXT */
 .content p {
-  line-height: 1.8;
-  margin-bottom: 15px;
-  font-size: 1.05rem;
+  margin-bottom: 16px;
+  font-size: 1.03rem;
 }
 
-/* IMAGE GRID */
-.image-grid-two {
+.intro-text {
+  font-size: 1.08rem;
+}
+
+/* IMAGE GRIDS */
+.image-grid-two,
+.image-grid-three {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
-  margin: 20px 0 30px;
+  gap: 24px;
+  margin: 28px 0 16px;
 }
 
-/* IMAGE BOX */
+.image-grid-two {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.image-grid-three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.feature-photo {
+  margin: 30px 0 18px;
+}
+
+.photo-card {
+  background-color: #fcfaf6;
+  border: 1px solid #e2d6c5;
+  padding: 12px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.08);
+}
+
 .img-box {
-  height: 220px;
+  width: 100%;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  border: 2px solid var(--secondary);
+  border-radius: 6px;
+  border: 1px solid #d7cab8;
 }
 
-/* LARGE IMAGE */
+.image-grid-two .img-box {
+  height: 320px;
+}
+
+.tall-img {
+  height: 320px;
+}
+
 .large-img {
-  height: 350px;
-  margin-bottom: 20px;
+  height: 500px;
 }
 
-/* INDIVIDUAL IMAGES */
-.hanoi1 {
-  background-image: url("Image/hanoi1.jpg");
+.image-caption {
+  margin-top: 12px;
+  font-size: 0.96rem;
+  color: #374151;
 }
 
-.hanoi2 {
-  background-image: url("Image/hanoi2.jpeg"); /* IMPORTANT */
-}
-
-.hanoi3 {
-  background-image: url("Image/hanoi3.jpg");
-}
-
-.cityview {
-  background-image: url("Image/Ho-Chi-Minh-City.jpg");
-}
-
-.north1 {
-  background-image: url("Image/North1.jpg");
-}
-
-.north2 {
-  background-image: url("Image/North2.jpg");
-}
-
-.food-main {
-  background-image: url("Image/hanoifood.jpg");
-}
-
-.food2 {
-  background-image: url("Image/hanoifood2.jpg");
-}
-
-.food3 {
-  background-image: url("Image/hanoifood3.jpg");
+.center-caption {
+  text-align: center;
+  max-width: 900px;
+  margin: 12px auto 0;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 20px;
-  border-top: 2px solid var(--secondary);
-  font-size: 0.9rem;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 22px 15px;
+  margin-top: 30px;
+}
+
+footer p {
+  margin: 4px 0;
+}
+
+/* IMAGE FILES */
+.hanoi1 {
+  background-image: url("hanoi1.jpg");
+}
+
+.hanoi2 {
+  background-image: url("hanoi2.jpeg");
+}
+
+.hanoi3 {
+  background-image: url("hanoi3.jpg");
+}
+
+.cityview {
+  background-image: url("vietnam4.jpg");
+}
+
+.north2 {
+  background-image: url("North2.jpg");
+}
+
+.north3 {
+  background-image: url("north3.jpg");
+}
+
+.north4 {
+  background-image: url("north4.jpg");
+}
+
+.north5 {
+  background-image: url("north5.jpg");
+}
+
+.north6 {
+  background-image: url("north6.jpeg");
+}
+
+.food-main {
+  background-image: url("hanoifood.jpg");
+}
+
+.food2 {
+  background-image: url("hanoifood2.jpg");
+}
+
+.food3 {
+  background-image: url("hanoifood3.jpg");
+}
+
+.food-compare {
+  background-image: url("hanoifood4.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #f2f2f2;
 }
 
 /* RESPONSIVE */
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   header {
-    flex-direction: column;
-  }
-
-  .banner-text,
-  .banner-image {
-    width: 100%;
-  }
-
-  .banner-image {
-    height: 150px;
-  }
-
-  .banner-text h1 {
-    font-size: 2.2rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav a {
-    width: 100%;
-    text-align: center;
-    padding: 12px;
-  }
-
-  .hero {
-    height: 220px;
-  }
-
-  .content h2 {
-    font-size: 2rem;
-  }
-
-  .content h3 {
-    font-size: 1.5rem;
-  }
-
-  .image-grid-two {
     grid-template-columns: 1fr;
   }
 
-  .img-box {
-    height: 200px;
+  .banner-image {
+    min-height: 240px;
+  }
+
+  .image-grid-two,
+  .image-grid-three {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-overlay {
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    max-width: none;
+  }
+
+  .content {
+    padding: 30px 24px;
+  }
+}
+
+@media (max-width: 700px) {
+  .banner-text {
+    padding: 28px 22px;
+  }
+
+  .banner-text h1 {
+    font-size: 1.9rem;
+  }
+
+  .hero {
+    min-height: 320px;
+  }
+
+  .hero-overlay h2 {
+    font-size: 1.5rem;
+  }
+
+  nav ul li a {
+    padding: 12px 14px;
+    font-size: 0.95rem;
+  }
+
+  .image-grid-two .img-box,
+  .tall-img {
+    height: 250px;
   }
 
   .large-img {
-    height: 250px;
+    height: 320px;
   }
 }
