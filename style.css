@@ -288,7 +288,58 @@ footer p {
   background-repeat: no-repeat;
   background-color: #f2f2f2;
 }
+/* CENTRAL PAGE IMAGES */
 
+.central-banner {
+  background-image: url("central13.jpg");
+}
+
+.central-hero {
+  background-image: url("central5.jpg");
+}
+
+/* HISTORY */
+.central-temple {
+  background-image: url("central12.jpg");
+}
+
+.central-hue {
+  background-image: url("central10.jpg");
+}
+
+/* FOOD */
+.central-food-main {
+  background-image: url("central6.jpg");
+}
+
+.central-food2 {
+  background-image: url("central7.jpg");
+}
+
+.central-food3 {
+  background-image: url("central8.jpg");
+}
+
+/* EXPLORATION */
+.central-night {
+  background-image: url("central1.jpg");
+}
+
+.central-bridge {
+  background-image: url("central3.jpg");
+}
+
+.central-hoian {
+  background-image: url("central9.jpg");
+}
+
+.central-map {
+  background-image: url("central11.jpg");
+}
+
+.central-culture {
+  background-image: url("central4.jpg");
+}
 /* RESPONSIVE */
 @media (max-width: 1000px) {
   header {
