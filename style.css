@@ -2,10 +2,12 @@
   --text: #1f2937;
   --background: #f7f3eb;
   --primary: #2f6f4e;
-  --secondary: #e8d8bd;
+  --primary-dark: #24563c;
+  --secondary: #e6dcc7;
   --accent: #d97b2d;
   --white: #ffffff;
-  --shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  --border: #d8ccb7;
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 /* RESET */
@@ -27,146 +29,203 @@ body {
 #wrapper {
   width: 90%;
   max-width: 1300px;
-  margin: 20px auto;
-  background-color: var(--white);
-  border: 2px solid var(--primary);
-  box-shadow: var(--shadow);
+  margin: 10px auto 24px;
+  background-color: var(--background);
+  border: 1.5px solid var(--primary);
 }
 
 /* HEADER */
 header {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  min-height: 280px;
+  grid-template-columns: 2.3fr 1fr;
+  min-height: 165px;
 }
 
 .banner-text {
-  background: linear-gradient(135deg, var(--primary), #214d37);
+  background-color: var(--primary);
   color: var(--white);
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  padding: 40px;
+  padding: 24px 30px;
+  text-align: center;
 }
 
 .banner-text h1 {
-  font-size: 2.4rem;
-  margin-bottom: 12px;
-}
-
-.banner-text p {
-  font-size: 1.05rem;
-  max-width: 500px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3.15rem;
+  line-height: 1.08;
+  font-weight: 700;
+  max-width: 620px;
 }
 
 .banner-image {
-  min-height: 280px;
+  min-height: 165px;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--background);
 }
 
+/* INDEX HEADER IMAGE */
+header .banner-image {
+  background-image: url("Nightlife.jpg");
+}
+
+/* PAGE-SPECIFIC HEADER IMAGES */
 .north-banner {
-  background-image: linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)), url("North1.jpg");
+  background-image: url("hanoi1.jpg");
+}
+
+.central-banner {
+  background-image: url("central13.jpg");
 }
 
 /* NAV */
 nav {
   background-color: var(--secondary);
-  border-top: 2px solid var(--primary);
-  border-bottom: 2px solid var(--primary);
+  border-bottom: 1.5px solid var(--border);
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 nav ul li a {
   display: block;
-  padding: 15px 22px;
+  padding: 12px 24px;
   text-decoration: none;
-  color: var(--text);
-  font-weight: bold;
-  transition: 0.3s ease;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.98rem;
+  transition: 0.25s ease;
 }
 
-nav ul li a:hover,
+nav ul li a:hover {
+  color: var(--accent);
+}
+
 nav ul li a.active {
   background-color: var(--primary);
   color: var(--white);
 }
 
+/* MAIN */
+main {
+  background-color: var(--background);
+}
+
 /* HERO */
 .hero {
-  min-height: 450px;
+  width: 100%;
+  height: 380px;
   background-size: cover;
   background-position: center;
-  position: relative;
+  background-repeat: no-repeat;
 }
 
+/* INDEX HERO */
+.hero {
+  background-image: url("RiceCrop.jpg");
+}
+
+/* PAGE HERO OVERRIDES */
 .north-hero {
-  background-image: linear-gradient(rgba(0,0,0,0.28), rgba(0,0,0,0.42)), url("north4.jpg");
+  background-image: url("north4.jpg");
 }
 
-.hero-overlay {
-  position: absolute;
-  bottom: 40px;
-  left: 40px;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 28px;
-  max-width: 560px;
-  border-left: 6px solid var(--accent);
-  box-shadow: var(--shadow);
-}
-
-.hero-overlay h2 {
-  color: var(--primary);
-  font-size: 2rem;
-  margin-bottom: 12px;
-}
-
-.hero-overlay p {
-  font-size: 1rem;
+.central-hero {
+  background-image: url("central5.jpg");
 }
 
 /* CONTENT */
 .content {
-  padding: 42px;
+  padding: 34px 44px 26px;
 }
 
 .content h2 {
   text-align: center;
   color: var(--primary);
-  font-size: 2rem;
-  margin-bottom: 22px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.2rem;
+  margin-bottom: 18px;
 }
 
 .content h3 {
-  font-size: 1.6rem;
   color: var(--primary);
-  margin-top: 36px;
-  margin-bottom: 16px;
-  border-left: 6px solid var(--accent);
+  font-size: 1.25rem;
+  margin-top: 34px;
+  margin-bottom: 14px;
   padding-left: 12px;
+  border-left: 4px solid var(--accent);
+}
+
+.content h4 {
+  color: var(--primary);
+  font-size: 1.15rem;
+  margin-bottom: 10px;
 }
 
 .content p {
+  font-size: 1rem;
   margin-bottom: 16px;
-  font-size: 1.03rem;
 }
 
 .intro-text {
-  font-size: 1.08rem;
+  font-size: 1.04rem;
 }
 
-/* IMAGE GRIDS */
+/* REGION BLOCKS FOR INDEX */
+.region-block {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 30px;
+  margin: 36px 0;
+  align-items: center;
+}
+
+.region-block.reverse {
+  grid-template-columns: 1fr 1.2fr;
+}
+
+.region-block.reverse .region-text {
+  order: 2;
+}
+
+.region-block.reverse .region-image {
+  order: 1;
+}
+
+.region-image {
+  height: 290px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.north-preview {
+  background-image: url("North2.jpg");
+}
+
+.central-preview {
+  background-image: url("central5.jpg");
+}
+
+.south-preview {
+  background-image: url("Ho-Chi-Minh-City.jpg");
+}
+
+/* IMAGE LAYOUTS */
 .image-grid-two,
 .image-grid-three {
   display: grid;
-  gap: 24px;
-  margin: 28px 0 16px;
+  gap: 20px;
+  margin: 24px 0 14px;
 }
 
 .image-grid-two {
@@ -178,46 +237,50 @@ nav ul li a.active {
 }
 
 .feature-photo {
-  margin: 30px 0 18px;
+  margin: 26px 0 14px;
 }
 
 .photo-card {
-  background-color: #fcfaf6;
-  border: 1px solid #e2d6c5;
+  background-color: #fbf8f1;
+  border: 1px solid var(--border);
   padding: 12px;
-  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.08);
 }
 
 .img-box {
   width: 100%;
   background-size: cover;
   background-position: center;
-  border-radius: 6px;
-  border: 1px solid #d7cab8;
+  background-repeat: no-repeat;
+  border: 1px solid var(--border);
+  background-color: #eee;
 }
 
 .image-grid-two .img-box {
-  height: 320px;
+  height: 240px;
+}
+
+.image-grid-three .img-box {
+  height: 250px;
 }
 
 .tall-img {
-  height: 320px;
+  height: 250px;
 }
 
 .large-img {
-  height: 500px;
+  height: 430px;
 }
 
 .image-caption {
-  margin-top: 12px;
-  font-size: 0.96rem;
+  margin-top: 10px;
+  font-size: 0.95rem;
   color: #374151;
 }
 
 .center-caption {
   text-align: center;
   max-width: 900px;
-  margin: 12px auto 0;
+  margin: 10px auto 0;
 }
 
 /* FOOTER */
@@ -225,15 +288,16 @@ footer {
   text-align: center;
   background-color: var(--primary);
   color: var(--white);
-  padding: 22px 15px;
-  margin-top: 30px;
+  padding: 20px 15px;
+  margin-top: 26px;
 }
 
 footer p {
   margin: 4px 0;
+  font-size: 0.96rem;
 }
 
-/* IMAGE FILES */
+/* NORTH PAGE IMAGES */
 .hanoi1 {
   background-image: url("hanoi1.jpg");
 }
@@ -286,19 +350,10 @@ footer p {
   background-image: url("hanoifood4.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  background-color: #f2f2f2;
+  background-color: #f1f1f1;
 }
+
 /* CENTRAL PAGE IMAGES */
-
-.central-banner {
-  background-image: url("central13.jpg");
-}
-
-.central-hero {
-  background-image: url("central5.jpg");
-}
-
-/* HISTORY */
 .central-temple {
   background-image: url("central12.jpg");
 }
@@ -307,7 +362,6 @@ footer p {
   background-image: url("central10.jpg");
 }
 
-/* FOOD */
 .central-food-main {
   background-image: url("central6.jpg");
 }
@@ -320,7 +374,6 @@ footer p {
   background-image: url("central8.jpg");
 }
 
-/* EXPLORATION */
 .central-night {
   background-image: url("central1.jpg");
 }
@@ -335,66 +388,106 @@ footer p {
 
 .central-map {
   background-image: url("central11.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #eef2f3;
 }
 
 .central-culture {
   background-image: url("central4.jpg");
 }
+
 /* RESPONSIVE */
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
+  .content {
+    padding: 30px 28px 22px;
+  }
+
+  .banner-text h1 {
+    font-size: 2.7rem;
+  }
+
+  .hero {
+    height: 330px;
+  }
+
+  .large-img {
+    height: 360px;
+  }
+}
+
+@media (max-width: 900px) {
   header {
     grid-template-columns: 1fr;
   }
 
+  .banner-text {
+    min-height: 140px;
+    padding: 24px 18px;
+  }
+
   .banner-image {
-    min-height: 240px;
+    min-height: 190px;
   }
 
   .image-grid-two,
-  .image-grid-three {
+  .image-grid-three,
+  .region-block,
+  .region-block.reverse {
     grid-template-columns: 1fr;
   }
 
-  .hero-overlay {
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
-    max-width: none;
+  .region-block.reverse .region-text,
+  .region-block.reverse .region-image {
+    order: unset;
   }
 
-  .content {
-    padding: 30px 24px;
+  .hero {
+    height: 280px;
+  }
+
+  .content h2 {
+    font-size: 1.9rem;
   }
 }
 
 @media (max-width: 700px) {
-  .banner-text {
-    padding: 28px 22px;
+  #wrapper {
+    width: 95%;
   }
 
   .banner-text h1 {
-    font-size: 1.9rem;
-  }
-
-  .hero {
-    min-height: 320px;
-  }
-
-  .hero-overlay h2 {
-    font-size: 1.5rem;
+    font-size: 2.15rem;
   }
 
   nav ul li a {
-    padding: 12px 14px;
-    font-size: 0.95rem;
+    padding: 11px 14px;
+    font-size: 0.93rem;
+  }
+
+  .content {
+    padding: 24px 18px 18px;
+  }
+
+  .content h3 {
+    font-size: 1.1rem;
+  }
+
+  .hero {
+    height: 220px;
   }
 
   .image-grid-two .img-box,
+  .image-grid-three .img-box,
   .tall-img {
-    height: 250px;
+    height: 220px;
   }
 
   .large-img {
-    height: 320px;
+    height: 260px;
+  }
+
+  .region-image {
+    height: 230px;
   }
 }
