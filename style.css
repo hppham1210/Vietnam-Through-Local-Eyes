@@ -69,16 +69,16 @@ header {
 
 /* INDEX HEADER IMAGE */
 header .banner-image {
-  background-image: url("Image/Nightlife.jpg");
+  background-image: url("./Image/Nightlife.jpg");
 }
 
 /* PAGE-SPECIFIC HEADER IMAGES */
 .north-banner {
-  background-image: url("Image/hanoi1.jpg");
+  background-image: url("./Image/hanoi1.jpg");
 }
 
 .central-banner {
-  background-image: url("Image/central13.jpg");
+  background-image: url("./Image/central13.jpg");
 }
 
 /* NAV */
@@ -131,16 +131,16 @@ main {
 
 /* INDEX HERO */
 .hero {
-  background-image: url("Image/RiceCrop.jpg");
+  background-image: url("./Image/RiceCrop.jpg");
 }
 
 /* PAGE HERO OVERRIDES */
 .north-hero {
-  background-image: url("Image/north4.jpg");
+  background-image: url("./Image/north4.jpg");
 }
 
 .central-hero {
-  background-image: url("Image/central5.jpg");
+  background-image: url("./Image/central5.jpg");
 }
 
 /* CONTENT */
@@ -212,15 +212,15 @@ main {
 }
 
 .north-preview {
-  background-image: url("Image/North2.jpg");
+  background-image: url("./Image/North2.jpg");
 }
 
 .central-preview {
-  background-image: url("Image/central5.jpg");
+  background-image: url("./Image/central5.jpg");
 }
 
 .south-preview {
-  background-image: url("Image/Ho-Chi-Minh-City.jpg");
+  background-image: url("./Image/Ho-Chi-Minh-City.jpg");
 }
 
 /* IMAGE LAYOUTS */
@@ -302,55 +302,55 @@ footer p {
 
 /* NORTH PAGE IMAGES */
 .hanoi1 {
-  background-image: url("Image/hanoi1.jpg");
+  background-image: url("./Image/hanoi1.jpg");
 }
 
 .hanoi2 {
-  background-image: url("Image/hanoi2.jpeg");
+  background-image: url("./Image/hanoi2.jpeg");
 }
 
 .hanoi3 {
-  background-image: url("Image/hanoi3.jpg");
+  background-image: url("./Image/hanoi3.jpg");
 }
 
 .cityview {
-  background-image: url("Image/vietnam4.jpg");
+  background-image: url("./Image/vietnam4.jpg");
 }
 
 .north2 {
-  background-image: url("Image/North2.jpg");
+  background-image: url("./Image/North2.jpg");
 }
 
 .north3 {
-  background-image: url("Image/north3.jpg");
+  background-image: url("./Image/north3.jpg");
 }
 
 .north4 {
-  background-image: url("Image/north4.jpg");
+  background-image: url("./Image/north4.jpg");
 }
 
 .north5 {
-  background-image: url("Image/north5.jpg");
+  background-image: url("./Image/north5.jpg");
 }
 
 .north6 {
-  background-image: url("Image/north6.jpeg");
+  background-image: url("./Image/north6.jpeg");
 }
 
 .food-main {
-  background-image: url("Image/hanoifood.jpg");
+  background-image: url("./Image/hanoifood.jpg");
 }
 
 .food2 {
-  background-image: url("Image/hanoifood2.jpg");
+  background-image: url("./Image/hanoifood2.jpg");
 }
 
 .food3 {
-  background-image: url("Image/hanoifood3.jpg");
+  background-image: url("./Image/hanoifood3.jpg");
 }
 
 .food-compare {
-  background-image: url("Image/hanoifood4.jpg");
+  background-image: url("./Image/hanoifood4.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -359,39 +359,39 @@ footer p {
 
 /* CENTRAL PAGE IMAGES */
 .central-temple {
-  background-image: url("Image/central12.jpg");
+  background-image: url("./Image/central12.jpg");
 }
 
 .central-hue {
-  background-image: url("Image/central10.jpg");
+  background-image: url("./Image/central10.jpg");
 }
 
 .central-food-main {
-  background-image: url("Image/central6.jpg");
+  background-image: url("./Image/central6.jpg");
 }
 
 .central-food2 {
-  background-image: url("Image/central7.jpg");
+  background-image: url("./Image/central7.jpg");
 }
 
 .central-food3 {
-  background-image: url("Image/central8.jpg");
+  background-image: url("./Image/central8.jpg");
 }
 
 .central-night {
-  background-image: url("Image/central1.jpg");
+  background-image: url("./Image/central1.jpg");
 }
 
 .central-bridge {
-  background-image: url("Image/central3.jpg");
+  background-image: url("./Image/central3.jpg");
 }
 
 .central-hoian {
-  background-image: url("Image/central9.jpg");
+  background-image: url("./Image/central9.jpg");
 }
 
 .central-map {
-  background-image: url("Image/central11.jpg");
+  background-image: url("./Image/central11.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -399,7 +399,7 @@ footer p {
 }
 
 .central-culture {
-  background-image: url("Image/central4.jpg");
+  background-image: url("./Image/central4.jpg");
 }
 
 /* RESPONSIVE */
