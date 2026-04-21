@@ -437,44 +437,28 @@ footer p {
 }
 
 /* SOUTH PAGE IMAGES */
-.saigon-street-night {
+.south-banner {
   background-image: url("./Image/saigon2.jpg");
 }
 
-.saigon-square-night {
-  background-image: url("./Image/saigon3.jpg");
-}
-
-.saigon-street-day {
-  background-image: url("./Image/saigon4.jpg");
-}
-
-.saigon-statue {
-  background-image: url("./Image/saigon5.jpg");
-}
-
-.saigon-skyline {
+.south-hero {
   background-image: url("./Image/saigon1.jpg");
 }
 
-.saigon-hotpot {
-  background-image: url("./Image/saigonfood1.jpg");
-}
-
-.saigon-comtam {
-  background-image: url("./Image/saigon2food.jpg");
-}
-
 .saigon-history {
-  background-image: url("./Image/saigon10.jpg");
+  background-image: url("./Image/saigon5.jpg");
 }
 
 .saigon-growth {
   background-image: url("./Image/saigon7.jpg");
 }
 
+.saigon-growth-extra {
+  background-image: url("./Image/saigon8.jpg");
+}
+
 .saigon-daily-life {
-  background-image: url("./Image/saigon6.jpg");
+  background-image: url("./Image/saigon4.jpg");
 }
 
 .saigon-breakfast {
@@ -485,11 +469,23 @@ footer p {
   background-image: url("./Image/saigonlunch.jpg");
 }
 
+.saigon-food-noodle {
+  background-image: url("./Image/saigonfood1.jpg");
+}
+
+.saigon-food-rice {
+  background-image: url("./Image/saigonfood2.jpeg");
+}
+
+.saigon-food-hotpot {
+  background-image: url("./Image/saigonfood4.jpeg");
+}
+
 .saigon-famous-place {
   background-image: url("./Image/saigon9.jpg");
 }
 
-.saigon-night-view {
+.saigon-famous-place-extra {
   background-image: url("./Image/saigon8.jpg");
 }
 /* VIDEO SECTION */
