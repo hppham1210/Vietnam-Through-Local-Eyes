@@ -477,6 +477,42 @@ footer p {
 .saigon-comtam {
   background-image: url("./Image/saigon2food.jpg");
 }
+.south-banner {
+  background-image: url("./Image/saigon10.jpg");
+}
+
+.south-hero {
+  background-image: url("./Image/saigon7.jpg");
+}
+
+/* SOUTH PAGE IMAGES */
+.saigon-history {
+  background-image: url("./Image/saigon10.jpg");
+}
+
+.saigon-growth {
+  background-image: url("./Image/saigon7.jpg");
+}
+
+.saigon-daily-life {
+  background-image: url("./Image/saigon6.jpg");
+}
+
+.saigon-breakfast {
+  background-image: url("./Image/saigonbreakfast.jpg");
+}
+
+.saigon-lunch {
+  background-image: url("./Image/saigonlunch.jpg");
+}
+
+.saigon-famous-place {
+  background-image: url("./Image/saigon9.jpg");
+}
+
+.saigon-night-view {
+  background-image: url("./Image/saigon8.jpg");
+}
 /* RESPONSIVE */
 @media (max-width: 1100px) {
   .content {
