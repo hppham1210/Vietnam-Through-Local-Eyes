@@ -70,7 +70,6 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-color: var(--background);
-  overflow: hidden;
 }
 
 /* INDEX HEADER IMAGE */
@@ -85,6 +84,10 @@ header .banner-image {
 
 .central-banner {
   background-image: url("./Image/central13.jpg");
+}
+
+.south-banner {
+  background-image: url("./Image/saigon10.jpg");
 }
 
 /* NAV */
@@ -134,7 +137,6 @@ main {
   background-position: center center;
   background-repeat: no-repeat;
   background-color: var(--background);
-  overflow: hidden;
 }
 
 /* INDEX HERO */
@@ -149,6 +151,10 @@ main {
 
 .central-hero {
   background-image: url("./Image/central5.jpg");
+}
+
+.south-hero {
+  background-image: url("./Image/saigon7.jpg");
 }
 
 /* CONTENT */
@@ -212,19 +218,18 @@ main {
 .region-image {
   width: 100%;
   aspect-ratio: 4 / 3;
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: #f2eee5;
+  background-color: #ffffff;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-  overflow: hidden;
+  transition: box-shadow 0.35s ease;
+  padding: 10px;
 }
 
 .region-image:hover {
-  transform: scale(1.02);
   box-shadow: var(--shadow-hover);
 }
 
@@ -258,8 +263,6 @@ main {
 
 .feature-photo {
   margin: 26px 0 14px;
-  overflow: hidden;
-  border-radius: var(--radius);
 }
 
 .photo-card {
@@ -269,7 +272,6 @@ main {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
-  overflow: hidden;
 }
 
 .photo-card:hover {
@@ -279,28 +281,29 @@ main {
 
 .img-box {
   width: 100%;
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   border: 1px solid var(--border);
-  background-color: #f2eee5;
+  background-color: #ffffff;
   border-radius: var(--radius-small);
-  transition: transform 0.4s ease;
-  overflow: hidden;
 }
 
+/* Remove image zoom so pictures do not get cropped */
 .photo-card:hover .img-box,
 .feature-photo:hover .img-box {
-  transform: scale(1.03);
+  transform: none;
 }
 
 .image-grid-two .img-box,
 .image-grid-three .img-box {
   aspect-ratio: 4 / 3;
+  min-height: 260px;
 }
 
 .tall-img {
   aspect-ratio: 3 / 4;
+  min-height: 420px;
 }
 
 .large-img {
@@ -390,10 +393,6 @@ footer p {
 
 .food-compare {
   background-image: url("./Image/hanoifood4.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-color: #f1f1f1;
 }
 
 /* CENTRAL PAGE IMAGES */
@@ -431,22 +430,10 @@ footer p {
 
 .central-map {
   background-image: url("./Image/central11.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-color: #eef2f3;
 }
 
 .central-culture {
   background-image: url("./Image/central4.jpg");
-}
-/* SOUTH PAGE HEADER + HERO */
-.south-banner {
-  background-image: url("./Image/saigon2.jpg");
-}
-
-.south-hero {
-  background-image: url("./Image/saigon1.jpg");
 }
 
 /* SOUTH PAGE IMAGES */
@@ -477,15 +464,7 @@ footer p {
 .saigon-comtam {
   background-image: url("./Image/saigon2food.jpg");
 }
-.south-banner {
-  background-image: url("./Image/saigon10.jpg");
-}
 
-.south-hero {
-  background-image: url("./Image/saigon7.jpg");
-}
-
-/* SOUTH PAGE IMAGES */
 .saigon-history {
   background-image: url("./Image/saigon10.jpg");
 }
@@ -513,6 +492,7 @@ footer p {
 .saigon-night-view {
   background-image: url("./Image/saigon8.jpg");
 }
+
 /* RESPONSIVE */
 @media (max-width: 1100px) {
   .content {
@@ -528,6 +508,10 @@ footer p {
   }
 
   .large-img {
+    min-height: 360px;
+  }
+
+  .tall-img {
     min-height: 360px;
   }
 }
@@ -565,6 +549,11 @@ footer p {
   .content h2 {
     font-size: 1.9rem;
   }
+
+  .image-grid-two .img-box,
+  .image-grid-three .img-box {
+    min-height: 240px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -596,17 +585,20 @@ footer p {
   .image-grid-two .img-box,
   .image-grid-three .img-box {
     aspect-ratio: 4 / 3;
+    min-height: 210px;
   }
 
   .tall-img {
     aspect-ratio: 3 / 4;
+    min-height: 280px;
   }
 
   .large-img {
-    min-height: 280px;
+    min-height: 260px;
   }
 
   .region-image {
     aspect-ratio: 4 / 3;
+    min-height: 220px;
   }
 }
