@@ -492,7 +492,33 @@ footer p {
 .saigon-night-view {
   background-image: url("./Image/saigon8.jpg");
 }
+/* VIDEO SECTION */
+.video-section {
+  margin: 42px 0 18px;
+}
 
+.video-card {
+  background-color: #fbf8f1;
+  border: 1px solid var(--border);
+  padding: 14px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.video-card iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: var(--radius-small);
+  box-shadow: var(--shadow);
+}
+
+.video-caption {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  color: #374151;
+  text-align: center;
+}
 /* RESPONSIVE */
 @media (max-width: 1100px) {
   .content {
