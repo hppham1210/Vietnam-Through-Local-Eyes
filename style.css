@@ -440,7 +440,43 @@ footer p {
 .central-culture {
   background-image: url("./Image/central4.jpg");
 }
+/* SOUTH PAGE HEADER + HERO */
+.south-banner {
+  background-image: url("./Image/saigon2.jpg");
+}
 
+.south-hero {
+  background-image: url("./Image/saigon1.jpg");
+}
+
+/* SOUTH PAGE IMAGES */
+.saigon-street-night {
+  background-image: url("./Image/saigon2.jpg");
+}
+
+.saigon-square-night {
+  background-image: url("./Image/saigon3.jpg");
+}
+
+.saigon-street-day {
+  background-image: url("./Image/saigon4.jpg");
+}
+
+.saigon-statue {
+  background-image: url("./Image/saigon5.jpg");
+}
+
+.saigon-skyline {
+  background-image: url("./Image/saigon1.jpg");
+}
+
+.saigon-hotpot {
+  background-image: url("./Image/saigonfood1.jpg");
+}
+
+.saigon-comtam {
+  background-image: url("./Image/saigon2food.jpg");
+}
 /* RESPONSIVE */
 @media (max-width: 1100px) {
   .content {
