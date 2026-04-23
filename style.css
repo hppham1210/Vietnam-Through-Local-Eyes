@@ -80,28 +80,28 @@ header .banner-image {
 /* PAGE-SPECIFIC HEADER IMAGES */
 .north-banner {
   background-image: url("./Image/hanoibanner.jpg");
- background-size: contain;
+ background-size: cover;
    background-position: center top;
   background-repeat: no-repeat;
 }
 
 .central-banner {
   background-image: url("./Image/central13.jpg");
- background-size: contain;
+ background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .south-banner {
   background-image: url("./Image/saigon2.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .plan-banner {
   background-image: url("./Image/planyoutripbanner.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
