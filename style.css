@@ -157,10 +157,7 @@ main {
 
 /* INDEX HERO */
 .index-hero {
-  background-image: url("./Image/RiceCrop.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url("./Image/ricecrop.jpg");
 }
 
 /* PAGE HERO OVERRIDES */
