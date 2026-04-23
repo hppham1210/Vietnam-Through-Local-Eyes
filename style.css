@@ -79,19 +79,12 @@ header .banner-image {
 
 /* PAGE-SPECIFIC HEADER IMAGES */
 .north-banner {
-  background-image: url("./Image/north4.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* BIG main image under nav */
-.north-hero {
   background-image: url("./Image/hanoibanner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 
 .central-banner {
   background-image: url("./Image/central13.jpg");
