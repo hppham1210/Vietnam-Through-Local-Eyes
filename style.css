@@ -164,11 +164,8 @@ main {
   background-image: url("./Image/saigon1.jpg");
 }
 
-.trip-hero {
-  background-image: url("./Image/trippic.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+.plan-banner {
+  background-image: url("../Image/planyoutripbanner.jpg");
 }
 
 /* CONTENT */
