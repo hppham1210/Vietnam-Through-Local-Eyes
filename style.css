@@ -78,18 +78,20 @@ header .banner-image {
 }
 
 /* PAGE-SPECIFIC HEADER IMAGES */
+/* NORTH */
 .north-banner {
   background-image: url("./Image/hanoibanner.jpg");
 }
 
+/* CENTRAL */
 .central-banner {
   background-image: url("./Image/central13.jpg");
 }
 
+/* SOUTH */
 .south-banner {
   background-image: url("./Image/saigon10.jpg");
 }
-
 /* NAV */
 nav {
   background-color: var(--secondary);
