@@ -71,7 +71,13 @@ header {
   background-repeat: no-repeat;
   background-color: var(--background);
 }
-
+.banner-overlay {
+  background: rgba(0, 0, 0, 0.45); /* darker = better contrast */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* INDEX HEADER IMAGE */
 header .banner-image {
   background-image: url("./Image/Nightlife.jpg");
@@ -79,15 +85,22 @@ header .banner-image {
 
 /* PAGE-SPECIFIC HEADER IMAGES */
 .north-banner {
-  background-image: url("./Image/hanoibanner.jpg");
+  background-image: url("../Image/hanoibanner.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .central-banner {
   background-image: url("./Image/central13.jpg");
+   background-size: cover;
+  background-position: center;
+
 }
 
 .south-banner {
   background-image: url("./Image/saigon2.jpg");
+   background-size: cover;
+  background-position: center;
 }
 
 .trip-banner {
