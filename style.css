@@ -158,22 +158,31 @@ main {
 /* INDEX HERO */
 .index-hero {
   background-image: url("./Image/RiceCrop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* PAGE HERO OVERRIDES */
 .north-hero {
   background-image: url("./Image/hanoibanner.jpg");
-background-size: contain;
+background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .central-hero {
   background-image: url("./Image/central5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .south-hero {
   background-image: url("./Image/saigon1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .trip-hero {
