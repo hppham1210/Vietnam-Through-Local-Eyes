@@ -85,10 +85,12 @@ header .banner-image {
 
 /* PAGE-SPECIFIC HEADER IMAGES */
 .north-banner {
-  background-image: url("../Image/hanoibanner.jpg");
+  background-image: url("./Image/hanoibanner.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
+
 
 .central-banner {
   background-image: url("./Image/central13.jpg");
@@ -103,8 +105,8 @@ header .banner-image {
   background-position: center;
 }
 
-.trip-banner {
-  background-image: url("./Image/tripbanner.jpg");
+.plan-banner {
+  background-image: url("./Image/planyoutripbanner.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
