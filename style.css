@@ -148,7 +148,7 @@ main {
 /* HERO */
 .hero {
   width: 100%;
-  min-height: 380px;
+  min-height: 500px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
