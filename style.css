@@ -72,11 +72,23 @@ header {
   background-color: var(--background);
 }
 .banner-overlay {
-  background: rgba(0, 0, 0, 0.45); /* darker = better contrast */
+  width: 100%;
   height: 100%;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.banner-overlay h1 {
+  color: var(--white);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3.15rem;
+  line-height: 1.08;
+  font-weight: 700;
+  text-align: center;
+  max-width: 620px;
+  padding: 24px 30px;
 }
 /* INDEX HEADER IMAGE */
 header .banner-image {
