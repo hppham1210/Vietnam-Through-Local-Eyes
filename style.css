@@ -79,12 +79,11 @@ header .banner-image {
 
 /* PAGE-SPECIFIC HEADER IMAGES */
 .north-banner {
-  background-image: url("./Image/hanoibanner.jpg");
+  background-image: url("./Image/north4.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
 }
-
 
 .central-banner {
   background-image: url("./Image/central13.jpg");
@@ -157,13 +156,16 @@ main {
 }
 
 /* INDEX HERO */
-.hero {
+.index-hero {
   background-image: url("./Image/RiceCrop.jpg");
 }
 
 /* PAGE HERO OVERRIDES */
 .north-hero {
-  background-image: url("./Image/north4.jpg");
+  background-image: url("./Image/hanoibanner.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .central-hero {
@@ -216,6 +218,15 @@ main {
 
 .intro-text {
   font-size: 1.04rem;
+}
+
+.section-title {
+  color: var(--primary);
+  font-size: 1.25rem;
+  margin-top: 34px;
+  margin-bottom: 14px;
+  padding-left: 12px;
+  border-left: 4px solid var(--accent);
 }
 
 /* REGION BLOCKS FOR INDEX */
