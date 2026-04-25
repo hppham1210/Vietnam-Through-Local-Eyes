@@ -543,7 +543,123 @@ footer p {
   background-image: url("./Image/saigon8.jpg");
 }
 
+/* HIDDEN GEMS PAGE */
+.gem-panel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin: 28px 0 36px;
+}
 
+.gem-panel {
+  min-height: 260px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gem-panel:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.gem-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.72), rgba(0,0,0,0.15));
+}
+
+.gem-panel-text {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  color: white;
+  z-index: 2;
+}
+
+.gem-tag {
+  display: inline-block;
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 5px 10px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+.gem-panel-text h4 {
+  color: white;
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.gem-panel-text p {
+  color: white;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* NORTH HIDDEN GEM IMAGES */
+.north-gem-phongnha {
+  background-image: url("./Image/hiddengem-northregion1.jpg");
+}
+
+.north-gem-bangioc {
+  background-image: url("./Image/hiddengem-northregion3.jpg");
+}
+
+.north-gem-mountains {
+  background-image: url("./Image/hiddengem-northregion2.jpg");
+}
+
+.north-gem-babe {
+  background-image: url("./Image/hiddengem-northregion4.jpg");
+}
+
+.north-gem-hanoi-cafe {
+  background-image: url("./Image/hiddengem-hanoi2.jpg");
+}
+
+.north-gem-hanoi-bar {
+  background-image: url("./Image/hiddengem-hanoi3.jpg");
+}
+
+.north-gem-pho {
+  background-image: url("./Image/hiddengem-hanoifood.jpg");
+}
+
+.north-gem-chaca {
+  background-image: url("./Image/hiddengem-hanoifood4.jpg");
+}
+
+.north-gem-foodmix {
+  background-image: url("./Image/hiddengem-hanoifood5.jpg");
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .gem-panel-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .gem-panel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gem-panel {
+    min-height: 240px;
+  }
+}
 
 /* VIDEO SECTION */
 .video-section {
