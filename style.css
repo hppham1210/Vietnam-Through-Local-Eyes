@@ -542,7 +542,76 @@ footer p {
 .saigon-famous-place-extra {
   background-image: url("./Image/saigon8.jpg");
 }
+/* HIDDEN GEMS PANEL DESIGN */
+.gem-panel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin: 28px 0 36px;
+}
 
+.gem-panel {
+  background-color: #fbf8f1;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gem-panel:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.gem-panel img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.gem-panel-text {
+  padding: 18px;
+}
+
+.gem-tag {
+  display: inline-block;
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 5px 10px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+.gem-panel h4 {
+  color: var(--primary);
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.gem-panel p {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .gem-panel-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .gem-panel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gem-panel img {
+    height: 220px;
+  }
+}
 /* VIDEO SECTION */
 .video-section {
   margin: 42px 0 18px;
