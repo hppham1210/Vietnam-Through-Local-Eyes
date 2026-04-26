@@ -643,7 +643,50 @@ footer p {
 .north-gem-foodmix {
   background-image: url("./Image/hiddengem-hanoifood5.jpg");
 }
+/* CENTRAL HIDDEN GEM IMAGES */
+.central-gem-trangan {
+  background-image: url("./Image/hiddengem-central5.jpg");
+}
 
+.central-gem-island {
+  background-image: url("./Image/hiddengem-central4.jpg");
+}
+
+.central-gem-hue {
+  background-image: url("./Image/hiddengem-central6.jpg");
+}
+
+.central-gem-waterfall {
+  background-image: url("./Image/hiddengem-central3.jpg");
+}
+
+.central-gem-beach {
+  background-image: url("./Image/hiddengem-central2.jpg");
+}
+
+.central-gem-rock {
+  background-image: url("./Image/hiddengem-central.jpg");
+}
+
+.central-gem-foodmix {
+  background-image: url("./Image/hiddemgem-centralfood.jpg");
+}
+
+.central-gem-miquang {
+  background-image: url("./Image/hiddemgem-centralfood2.jpg");
+}
+
+.central-gem-bunbo {
+  background-image: url("./Image/hiddemgem-centralfood3.jpg");
+}
+
+.central-gem-streetfood {
+  background-image: url("./Image/hiddemgem-centralfood4.jpg");
+}
+
+.central-gem-familymeal {
+  background-image: url("./Image/hiddemgem-centralfood5.jpg");
+}
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .gem-panel-grid {
