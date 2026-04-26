@@ -701,6 +701,83 @@ footer p {
 .central-gem-rock-coast {
   background-image: url("./Image/hiddengem-central.jpg");
 }
+/* SOUTH HIDDEN GEMS */
+
+.south-gem-streetfood {
+  background-image: url("./Image/hiddemgem-south15.jpg");
+}
+
+.south-gem-seafood {
+  background-image: url("./Image/hiddemgem-south14.jpg");
+}
+
+.south-gem-food-variety {
+  background-image: url("./Image/hiddemgem-south16.jpg");
+}
+
+.south-gem-breakfast {
+  background-image: url("./Image/hiddemgem-south17.jpg");
+}
+
+.south-gem-dining {
+  background-image: url("./Image/hiddemgem-south13.jpg");
+}
+
+.south-gem-nightlife {
+  background-image: url("./Image/hiddemgem-south12.jpg");
+}
+
+.south-gem-bar {
+  background-image: url("./Image/hiddemgem-south10.jpg");
+}
+
+.south-gem-rooftop {
+  background-image: url("./Image/hiddemgem-south11.jpg");
+}
+
+.south-gem-phuquoc {
+  background-image: url("./Image/hiddemgem-south4.jpg");
+}
+
+.south-gem-waterfall {
+  background-image: url("./Image/hiddemgem-south5.jpg");
+}
+
+.south-gem-dalat {
+  background-image: url("./Image/hiddemgem-south7.jpg");
+}
+
+.south-gem-floating {
+  background-image: url("./Image/hiddemgem-south6.jpg");
+}
+
+.south-gem-mekong {
+  background-image: url("./Image/hiddemgem-south2.jpg");
+}
+
+.south-gem-island {
+  background-image: url("./Image/hiddemgem-south3.jpg");
+}
+
+.south-gem-coast {
+  background-image: url("./Image/hiddemgem-south.jpg");
+}
+
+.south-gem-bodega {
+  background-image: url("./Image/hiddemgem-south8.jpg");
+}
+
+.south-gem-bar2 {
+  background-image: url("./Image/hiddemgem-south9.jpg");
+}
+
+.south-gem-party {
+  background-image: url("./Image/hiddemgem-south19.jpg");
+}
+
+.south-gem-nightcity {
+  background-image: url("./Image/hiddemgem-south18.jpg");
+}
 @media (max-width: 900px) {
   .gem-panel-grid {
     grid-template-columns: repeat(2, 1fr);
