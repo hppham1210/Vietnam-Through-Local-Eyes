@@ -608,7 +608,60 @@ footer p {
   font-size: 0.95rem;
   line-height: 1.5;
 }
+.gem-panel {
+  position: relative;
+  height: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
 
+/* DARK OVERLAY */
+.gem-panel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+
+/* TEXT CONTAINER */
+.gem-panel-text {
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+  color: white;
+  z-index: 2;
+  width: 100%;
+  transition: 0.4s;
+}
+
+/* DESCRIPTION HIDDEN */
+.gem-panel-text p {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+
+/* HOVER / CLICK EFFECT */
+.gem-panel:hover::after,
+.gem-panel:active::after {
+  background: rgba(0,0,0,0.7);
+}
+
+.gem-panel:hover .gem-panel-text,
+.gem-panel:active .gem-panel-text {
+  transform: translateY(-10px);
+}
+
+.gem-panel:hover p,
+.gem-panel:active p {
+  opacity: 1;
+  max-height: 200px;
+}
 /* NORTH HIDDEN GEM IMAGES */
 .north-gem-hanoi-hidden {
   background-image: url("./Image/hiddengem-hanoi.jpg");
