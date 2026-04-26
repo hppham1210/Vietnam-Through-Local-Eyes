@@ -657,7 +657,50 @@ footer p {
 .north-gem-village-life {
   background-image: url("./Image/hiddengem-northregion.jpg");
 }
+/* CENTRAL HIDDEN GEM IMAGES */
+.central-gem-food-overview {
+  background-image: url("./Image/hiddemgem-centralfood.jpg");
+}
 
+.central-gem-trang-an {
+  background-image: url("./Image/hiddengem-central5.jpg");
+}
+
+.central-gem-island {
+  background-image: url("./Image/hiddengem-central4.jpg");
+}
+
+.central-gem-hue-citadel {
+  background-image: url("./Image/hiddengem-central6.jpg");
+}
+
+.central-gem-waterfall {
+  background-image: url("./Image/hiddengem-central3.jpg");
+}
+
+.central-gem-fishing-village {
+  background-image: url("./Image/hiddengem-central2.jpg");
+}
+
+.central-gem-mi-quang {
+  background-image: url("./Image/hiddemgem-centralfood5.jpg");
+}
+
+.central-gem-central-food {
+  background-image: url("./Image/hiddemgem-centralfood4.jpg");
+}
+
+.central-gem-seafood {
+  background-image: url("./Image/hiddemgem-centralfood3.jpg");
+}
+
+.central-gem-local-feast {
+  background-image: url("./Image/hiddemgem-centralfood2.jpg");
+}
+
+.central-gem-rock-coast {
+  background-image: url("./Image/hiddengem-central.jpg");
+}
 @media (max-width: 900px) {
   .gem-panel-grid {
     grid-template-columns: repeat(2, 1fr);
