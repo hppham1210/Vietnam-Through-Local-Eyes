@@ -273,7 +273,7 @@ background-size: cover;
 .region-image {
   width: 100%;
   aspect-ratio: 4 / 3;
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-color: #ffffff;
@@ -336,7 +336,7 @@ background-size: cover;
 
 .img-box {
   width: 100%;
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   border: 1px solid var(--border);
