@@ -687,6 +687,54 @@ footer p {
 .central-gem-familymeal {
   background-image: url("./Image/hiddemgem-centralfood5.jpg");
 }
+/* SOUTH HIDDEN GEM IMAGES */
+.south-gem-streetfood {
+  background-image: url("./Image/hiddemgem-south15.jpg");
+}
+
+.south-gem-seafood {
+  background-image: url("./Image/hiddemgem-south14.jpg");
+}
+
+.south-gem-foodmix {
+  background-image: url("./Image/hiddemgem-south16.jpg");
+}
+
+.south-gem-breakfast {
+  background-image: url("./Image/hiddemgem-south17.jpg");
+}
+
+.south-gem-dining {
+  background-image: url("./Image/hiddemgem-south13.jpg");
+}
+
+.south-gem-nightclub {
+  background-image: url("./Image/hiddemgem-south12.jpg");
+}
+
+.south-gem-rooftop {
+  background-image: url("./Image/hiddemgem-south19.jpg");
+}
+
+.south-gem-phuquoc {
+  background-image: url("./Image/hiddemgem-south10.jpg");
+}
+
+.south-gem-waterfall {
+  background-image: url("./Image/hiddemgem-south11.jpg");
+}
+
+.south-gem-dalat {
+  background-image: url("./Image/hiddemgem-south4.jpg");
+}
+
+.south-gem-mekong {
+  background-image: url("./Image/hiddemgem-south5.jpg");
+}
+
+.south-gem-floatingvillage {
+  background-image: url("./Image/hiddemgem-south7.jpg");
+}
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .gem-panel-grid {
