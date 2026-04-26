@@ -509,7 +509,10 @@ footer p {
 .central13 {
   background-image: url("./Image/central13.jpg"); 
 }
-
+.large-two .img-box {
+  aspect-ratio: 16 / 9;
+  min-height: 380px;
+}
 
 /* SOUTH PAGE IMAGES */
 .saigon-history {
