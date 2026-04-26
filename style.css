@@ -544,70 +544,92 @@ footer p {
 }
 
 /* HIDDEN GEMS PAGE */
+/* HIDDEN GEMS PAGE DESIGN */
+.hidden-intro {
+  margin-bottom: 35px;
+}
+
+.region-hidden-section {
+  margin-top: 45px;
+}
+
 .gem-panel-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
-  margin: 28px 0 36px;
+  margin-top: 25px;
 }
 
 .gem-panel {
-  min-height: 260px;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
+  min-height: 330px;
+  border-radius: 14px;
   overflow: hidden;
-  position: relative;
   background-size: cover;
   background-position: center;
-  box-shadow: var(--shadow);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.gem-panel:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-hover);
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+  display: flex;
+  align-items: flex-end;
 }
 
 .gem-panel::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.72), rgba(0,0,0,0.15));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.15));
 }
 
 .gem-panel-text {
-  position: absolute;
-  left: 18px;
-  right: 18px;
-  bottom: 18px;
-  color: white;
+  position: relative;
   z-index: 2;
+  color: white;
+  padding: 22px;
 }
 
 .gem-tag {
   display: inline-block;
-  background-color: var(--secondary);
-  color: var(--primary);
-  font-weight: 700;
-  font-size: 0.85rem;
-  padding: 5px 10px;
-  border-radius: 999px;
-  margin-bottom: 10px;
-}
-
-.gem-panel-text h4 {
+  background-color: var(--accent);
   color: white;
-  font-size: 1.25rem;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: bold;
   margin-bottom: 8px;
 }
 
-.gem-panel-text p {
+.gem-panel h4 {
+  font-size: 1.35rem;
+  margin-bottom: 8px;
   color: white;
+}
+
+.gem-panel p {
+  color: #f5f1e8;
   font-size: 0.95rem;
-  margin-bottom: 0;
+  line-height: 1.5;
 }
 
 /* NORTH HIDDEN GEM IMAGES */
+.north-gem-hanoi-hidden {
+  background-image: url("./Image/hiddengem-hanoi.jpg");
+}
+
+.north-gem-food-overview {
+  background-image: url("./Image/hiddengem-hanoifood5.jpg");
+}
+
+.north-gem-bunrieu {
+  background-image: url("./Image/hiddengem-hanoifood4.jpg");
+}
+
+.north-gem-chaca {
+  background-image: url("./Image/hiddengem-hanoifood3.jpg");
+}
+
+.north-gem-pho-local {
+  background-image: url("./Image/hiddengem-hanoifood2.jpg");
+}
+
 .north-gem-phongnha {
   background-image: url("./Image/hiddengem-northregion1.jpg");
 }
@@ -616,7 +638,7 @@ footer p {
   background-image: url("./Image/hiddengem-northregion3.jpg");
 }
 
-.north-gem-mountains {
+.north-gem-mountain-road {
   background-image: url("./Image/hiddengem-northregion2.jpg");
 }
 
@@ -624,116 +646,28 @@ footer p {
   background-image: url("./Image/hiddengem-northregion4.jpg");
 }
 
-.north-gem-hanoi-cafe {
-  background-image: url("./Image/hiddengem-hanoi2.jpg");
-}
-
-.north-gem-hanoi-bar {
+.north-gem-cathedral-cafe {
   background-image: url("./Image/hiddengem-hanoi3.jpg");
 }
 
-.north-gem-pho {
-  background-image: url("./Image/hiddengem-hanoifood.jpg");
+.north-gem-hidden-bar {
+  background-image: url("./Image/hiddengem-hanoi2.jpg");
 }
 
-.north-gem-chaca {
-  background-image: url("./Image/hiddengem-hanoifood4.jpg");
+.north-gem-village-life {
+  background-image: url("./Image/hiddengem-northregion.jpg");
 }
 
-.north-gem-foodmix {
-  background-image: url("./Image/hiddengem-hanoifood5.jpg");
-}
-/* CENTRAL HIDDEN GEM IMAGES */
-.central-gem-trangan {
-  background-image: url("./Image/hiddengem-central5.jpg");
+@media (max-width: 900px) {
+  .gem-panel-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.central-gem-island {
-  background-image: url("./Image/hiddengem-central4.jpg");
-}
-
-.central-gem-hue {
-  background-image: url("./Image/hiddengem-central6.jpg");
-}
-
-.central-gem-waterfall {
-  background-image: url("./Image/hiddengem-central3.jpg");
-}
-
-.central-gem-beach {
-  background-image: url("./Image/hiddengem-central2.jpg");
-}
-
-.central-gem-rock {
-  background-image: url("./Image/hiddengem-central.jpg");
-}
-
-.central-gem-foodmix {
-  background-image: url("./Image/hiddemgem-centralfood.jpg");
-}
-
-.central-gem-miquang {
-  background-image: url("./Image/hiddemgem-centralfood2.jpg");
-}
-
-.central-gem-bunbo {
-  background-image: url("./Image/hiddemgem-centralfood3.jpg");
-}
-
-.central-gem-streetfood {
-  background-image: url("./Image/hiddemgem-centralfood4.jpg");
-}
-
-.central-gem-familymeal {
-  background-image: url("./Image/hiddemgem-centralfood5.jpg");
-}
-/* SOUTH HIDDEN GEM IMAGES */
-.south-gem-streetfood {
-  background-image: url("./Image/hiddemgem-south15.jpg");
-}
-
-.south-gem-seafood {
-  background-image: url("./Image/hiddemgem-south14.jpg");
-}
-
-.south-gem-foodmix {
-  background-image: url("./Image/hiddemgem-south16.jpg");
-}
-
-.south-gem-breakfast {
-  background-image: url("./Image/hiddemgem-south17.jpg");
-}
-
-.south-gem-dining {
-  background-image: url("./Image/hiddemgem-south13.jpg");
-}
-
-.south-gem-nightclub {
-  background-image: url("./Image/hiddemgem-south12.jpg");
-}
-
-.south-gem-rooftop {
-  background-image: url("./Image/hiddemgem-south19.jpg");
-}
-
-.south-gem-phuquoc {
-  background-image: url("./Image/hiddemgem-south10.jpg");
-}
-
-.south-gem-waterfall {
-  background-image: url("./Image/hiddemgem-south11.jpg");
-}
-
-.south-gem-dalat {
-  background-image: url("./Image/hiddemgem-south4.jpg");
-}
-
-.south-gem-mekong {
-  background-image: url("./Image/hiddemgem-south5.jpg");
-}
-
-.south-gem-floatingvillage {
-  background-image: url("./Image/hiddemgem-south7.jpg");
+@media (max-width: 600px) {
+  .gem-panel-grid {
+    grid-template-columns: 1fr;
+  }
 }
 /* RESPONSIVE */
 @media (max-width: 900px) {
