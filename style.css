@@ -879,9 +879,9 @@ footer p {
   }
 }
 
-/* VIDEO SECTION */
+/* VIDEO DESIGN */
 .video-section {
-  margin: 42px 0 18px;
+  margin: 40px 0 20px;
 }
 
 .video-card {
@@ -892,21 +892,20 @@ footer p {
   box-shadow: var(--shadow);
 }
 
-.video-card iframe {
+.video-card video {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  border: none;
+  height: auto;
   border-radius: var(--radius-small);
   box-shadow: var(--shadow);
+  display: block;
 }
 
 .video-caption {
-  margin-top: 12px;
+  margin-top: 10px;
   font-size: 0.95rem;
   color: #374151;
   text-align: center;
 }
-
 /* PLAN YOUR TRIP FORM */
 .trip-form {
   margin-top: 20px;
