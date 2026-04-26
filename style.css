@@ -498,11 +498,11 @@ footer p {
 }
 
 /* Exploration */
-.central-bridge {
+.central3 {
   background-image: url("./Image/central3.jpg"); /
 }
 
-.central-hoian {
+.central9 {
   background-image: url("./Image/central9.jpg");
 }
 
@@ -510,13 +510,7 @@ footer p {
   background-image: url("./Image/central13.jpg"); 
 }
 
-.central-night {
-  background-image: url("./Image/central1.jpg"); 
-}
 
-.central-map {
-  background-image: url("./Image/central11.jpg"); 
-}
 /* SOUTH PAGE IMAGES */
 .saigon-history {
   background-image: url("./Image/saigon5.jpg");
