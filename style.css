@@ -571,7 +571,7 @@ footer p {
 
 .gem-panel-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 22px;
   margin-top: 25px;
 }
@@ -633,7 +633,11 @@ footer p {
   background-position: center;
   cursor: pointer;
 }
-
+@media (max-width: 768px) {
+  .gem-panel-grid {
+    grid-template-columns: 1fr;
+  }
+}
 /* DARK OVERLAY */
 .gem-panel::after {
   content: "";
