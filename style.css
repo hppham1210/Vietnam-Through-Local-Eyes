@@ -466,48 +466,54 @@ footer p {
 .food-compare {
   background-image: url("./Image/hanoifood4.jpg");
 }
-
 /* CENTRAL PAGE IMAGES */
+
+/* History */
 .central-temple {
-  background-image: url("./Image/central12.jpg");
+  background-image: url("./Image/central12.jpg"); 
 }
 
 .central-hue {
-  background-image: url("./Image/central10.jpg");
+  background-image: url("./Image/central10.jpg"); 
 }
 
+/* Food */
 .central-food-main {
-  background-image: url("./Image/central6.jpg");
+  background-image: url("./Image/haisan.jpg"); 
 }
 
 .central-food2 {
-  background-image: url("./Image/central7.jpg");
+  background-image: url("./Image/bunbohue.jpg");
 }
 
 .central-food3 {
-  background-image: url("./Image/central8.jpg");
+  background-image: url("./Image/myquang.jpg");  
 }
 
-.central-night {
-  background-image: url("./Image/central1.jpg");
+.central-banhxeo {
+  background-image: url("./Image/banhxeo.jpg"); 
 }
 
+/* Exploration */
 .central-bridge {
-  background-image: url("./Image/central3.jpg");
+  background-image: url("./Image/central3.jpg"); /
 }
 
 .central-hoian {
   background-image: url("./Image/central9.jpg");
 }
 
-.central-map {
-  background-image: url("./Image/central11.jpg");
-}
-
 .central-culture {
-  background-image: url("./Image/central4.jpg");
+  background-image: url("./Image/central4.jpg"); 
 }
 
+.central-night {
+  background-image: url("./Image/central1.jpg"); 
+}
+
+.central-map {
+  background-image: url("./Image/central11.jpg"); 
+}
 /* SOUTH PAGE IMAGES */
 .saigon-history {
   background-image: url("./Image/saigon5.jpg");
