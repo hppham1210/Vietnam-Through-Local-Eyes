@@ -561,7 +561,21 @@ footer p {
 .dinhdoclap {
   background-image: url("./Image/saigon8.jpg");
 }
+.south-landscape {
+  background-image: url("./Image/southvietnam1.jpg");
+}
 
+.south-boat-food {
+  background-image: url("./Image/southvietnam2.jpg");
+}
+
+.south-floating-market {
+  background-image: url("./Image/southvietnam3.jpg");
+}
+
+.south-map {
+  background-image: url("./Image/southvietnam4.jpg");
+}
 /* HIDDEN GEMS PAGE */
 /* HIDDEN GEMS PAGE DESIGN */
 .hidden-intro {
@@ -854,6 +868,7 @@ footer p {
 .south-gem-nightcity {
   background-image: url("./Image/hiddemgem-south18.jpg");
 }
+
 @media (max-width: 900px) {
   .gem-panel-grid {
     grid-template-columns: repeat(2, 1fr);
