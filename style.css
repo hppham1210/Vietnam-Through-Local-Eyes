@@ -90,7 +90,30 @@ header .banner-image {
   background-repeat: no-repeat;
 
 }
+.region-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  background-color: #fbf8f1;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
+.region-table th,
+.region-table td {
+  border: 1px solid var(--border);
+  padding: 12px;
+  text-align: left;
+}
+
+.region-table th {
+  background-color: var(--primary);
+  color: white;
+}
+
+.region-table tr:nth-child(even) {
+  background-color: #f3eee4;
+}
 /* PAGE-SPECIFIC HEADER IMAGES */
 .north-banner {
   background-image: url("./Image/hanoibanner.jpg");
