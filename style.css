@@ -93,22 +93,25 @@ header .banner-image {
 .region-table {
   width: 100%;
   border-collapse: collapse;
-  margin: 25px 0;
+  margin: 22px 0 30px;
   background-color: #fbf8f1;
-  border-radius: 10px;
-  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
 }
 
 .region-table th,
 .region-table td {
   border: 1px solid var(--border);
-  padding: 12px;
+  padding: 14px 16px;
   text-align: left;
+  vertical-align: top;
+  line-height: 1.5;
 }
 
 .region-table th {
   background-color: var(--primary);
   color: white;
+  font-weight: bold;
 }
 
 .region-table tr:nth-child(even) {
