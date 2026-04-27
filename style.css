@@ -92,30 +92,48 @@ header .banner-image {
 }
 .region-table {
   width: 100%;
-  border-collapse: collapse;
-  margin: 22px 0 30px;
-  background-color: #fbf8f1;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 25px 0 40px;
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-.region-table th,
-.region-table td {
-  border: 1px solid var(--border);
-  padding: 14px 16px;
-  text-align: left;
-  vertical-align: top;
-  line-height: 1.5;
-}
-
+/* HEADER */
 .region-table th {
-  background-color: var(--primary);
+  background: var(--primary);
   color: white;
-  font-weight: bold;
+  padding: 16px;
+  text-align: left;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
 }
 
-.region-table tr:nth-child(even) {
-  background-color: #f3eee4;
+/* CELLS */
+.region-table td {
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+/* ROW HOVER EFFECT */
+.region-table tr:hover td {
+  background-color: #f8f5ee;
+  transition: 0.3s;
+}
+
+/* REMOVE LAST BORDER */
+.region-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* LEFT ACCENT BAR (HIGHLIGHT LOOK) */
+.region-table td:first-child {
+  font-weight: bold;
+  color: var(--primary);
+  border-left: 5px solid var(--accent);
 }
 /* PAGE-SPECIFIC HEADER IMAGES */
 .north-banner {
