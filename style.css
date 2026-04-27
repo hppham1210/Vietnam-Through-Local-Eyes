@@ -92,48 +92,39 @@ header .banner-image {
 }
 .region-table {
   width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  margin: 25px 0 40px;
-  background: #ffffff;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-collapse: collapse;
+  margin: 25px 0;
 }
 
-/* HEADER */
-.region-table th {
-  background: var(--primary);
-  color: white;
-  padding: 16px;
-  text-align: left;
-  font-size: 1rem;
-  letter-spacing: 0.5px;
-}
-
-/* CELLS */
+.region-table th,
 .region-table td {
-  padding: 16px;
-  border-bottom: 1px solid #eee;
-  font-size: 0.95rem;
+  border: 1px solid #ddd;
+  padding: 14px;
+  text-align: left;
+  vertical-align: top;
 }
 
-/* ROW HOVER EFFECT */
-.region-table tr:hover td {
-  background-color: #f8f5ee;
-  transition: 0.3s;
+.region-table th {
+  background-color: var(--primary);
+  color: white;
 }
 
-/* REMOVE LAST BORDER */
-.region-table tr:last-child td {
-  border-bottom: none;
+.region-table td {
+  background-color: #fff;
 }
 
-/* LEFT ACCENT BAR (HIGHLIGHT LOOK) */
-.region-table td:first-child {
+/* Make columns balanced */
+.region-table td:nth-child(1) {
+  width: 20%;
   font-weight: bold;
-  color: var(--primary);
-  border-left: 5px solid var(--accent);
+}
+
+.region-table td:nth-child(2) {
+  width: 40%;
+}
+
+.region-table td:nth-child(3) {
+  width: 40%;
 }
 /* PAGE-SPECIFIC HEADER IMAGES */
 .north-banner {
